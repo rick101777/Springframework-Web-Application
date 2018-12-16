@@ -12,10 +12,11 @@
     	<welcome-file>/jsp/Login.jsp</welcome-file>
    	</welcome-file-list>
     
+    
    <servlet>
         <servlet-name>farias</servlet-name>
         <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
+            com.farias.servlet.FariasServlet
         </servlet-class>
         <init-param>
         <param-name>contextConfigLocation</param-name>
@@ -26,6 +27,6 @@
     
     <servlet-mapping>
         <servlet-name>farias</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/farias/*</url-pattern>
     </servlet-mapping>
 </web-app>
